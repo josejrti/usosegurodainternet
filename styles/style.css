@@ -12,283 +12,221 @@ header {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: center;
     width:100%;
-    padding:10px;
+    padding:0.625rem;
+}
+header .logo-mobile {
+    display: none;
 }
 header nav {
     display:flex;
     flex-direction: row;
     flex-wrap: wrap;
 }
-header nav a {
-    margin:15px;
-}
 header nav a:link {
     text-decoration: none;
     color: #ffffff;
-    font-size: 15px;
+    font-size: 0.9375rem;
     text-transform: uppercase;
+    text-align: center;
+    border-bottom: 1px solid #ffffff;
+    padding:0.3125rem;
     transition: 1s;
+    margin: 0.3125rem;
 }
 header nav a:hover {
     color:#01B5FE;
+    border-bottom: 1px solid #01b5fe;
 }
 header nav a:active {
     color: #ffffff;
+    border-bottom: 1px solid #ffffff;
 }
 header nav a:visited {
     color: #ffffff;
+    border-bottom: 1px solid #ffffff;
 }
 main {
     width:100%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
 }
-main .box {
+main .bov {
+    margin: 1.875rem;
     display: flex;
     flex-direction: column;
-    align-items: center;
     justify-content: center;
-    width: 100%;
-    padding-top:20px;
-    padding-bottom:20px;
+    align-items: center;
 }
-main .box h1{
-    font-size:37px;
-    padding-bottom:10px;
+main .bov h1{
+    font-size:1.7rem;
+    text-transform: uppercase;
+    text-align: center;
 }
-main .box p {
-    font-size:21px;
-    padding:5px;
+main .bov p {
+    text-align: center;
+    font-size:1.0625rem;
+    margin:0.3125rem;
 }
-main .box button {
+main .bov button {
     background-color:#182732;
     color:white;
-    font-size:15px;
-    padding:25px;
-    padding-top:10px;
-    padding-bottom:10px;
+    font-size:0.8375rem;
+    padding:2.9625rem;
+    padding-top:0.625rem;
+    padding-bottom:0.625rem;
     border:none;
-    border-radius:10px;
-    margin-top:30px;
+    border-radius:0.625rem;
+    text-align: center;
+    margin-top: 2rem;
+    text-transform: uppercase;
 }
 main .mod {
+    margin: 1.875rem;
     display: flex;
     flex-direction: column;
-    align-items: center;
     justify-content: center;
-    padding:50px;
-    padding-top:30px;
-    padding-bottom:30px;
+    align-items: center;
 }
 main .mod h1 {
-    font-size:37px;
-    padding-bottom:10px;
+    font-size:1.7rem;
+    text-transform: uppercase;
+    text-align: center;
 }
 main .mod ul {
-    list-style-type: circle;
+    list-style-type: none;
 }
 main .mod ul li {
-    padding:5px;
+    padding:0.3125rem;
 }
-main .mod ul p {
-    font-size: 21px;
+main .mod ul li p {
+    font-size: 1.0625rem;
+    text-align: justify;
 }
-ul p span {
+ul li p strong {
     color:#01B5FE;
 }
 main .sobre {
+    margin: 1.875rem;
     display: flex;
     flex-direction: column;
-    align-items: center;
     justify-content: center;
-    width: 100%;
-    padding-bottom:20px;
-    padding-top:20px;
+    align-items: center;
 }
 main .sobre h1 {
-    font-size:37px;
-    padding-bottom:10px;
+    font-size:1.7rem;
+    text-transform: uppercase;
+    text-align: center;
 }
 main .sobre p {
-    font-size: 21px;
-    padding:5px;
+    font-size: 1.0625rem;
+    margin:0.3125rem;
+    text-align: center;
 }
 footer p {
     text-align: center;
-    font-size:16px;
+    font-size:0.8125rem;
 }
 footer {
-    padding:30px;
+    margin: 1.875rem;
+}
+.bov iframe {
+    margin:1.769rem;
+}
+.bov .down:link {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 0.9375rem;
+    text-transform: uppercase;
+    text-align: center;
+    transition: 1s;
+}
+.bov .down:visited {
+    color: #ffffff;
 }
 @media (max-width: 1022px) {
-    main .box h1{
-    font-size:30px;
-    }
-    main .box p {
-    font-size:17px;
-    }
-    main .mod h1 {
-    font-size:30px;
-    }
-    main .mod ul p {
-        font-size: 17px;
-    }
-    main .sobre h1 {
-    font-size:30px;
-}
-    main .sobre p {
-    font-size: 17px;
-}
-    footer p {
-    font-size:13px;
+    html {
+        font-size: 15px;
     }
 }
-@media (max-width: 828px) {
-    main .box h1{
-    font-size:23px;
+@media (max-width: 940px) {
+    html {
+        font-size: 14px;
     }
-    main .box p {
-    font-size:13px;
-    }
-    main .mod h1 {
-    font-size:23px;
-    }
-    main .mod ul p {
+}
+@media (max-width: 870px) {
+    html {
         font-size: 13px;
     }
-    main .sobre h1 {
-    font-size:23px;
 }
-    main .sobre p {
-    font-size: 13px;
-}
-    footer p {
-    font-size:9px;
+@media (max-width: 690px) {
+    html {
+        font-size: 15px;
     }
-}
-@media (max-width: 648px) {
-    header {
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-    width:100%;
-    }
-    header nav a:link {
-    font-size: 10px;
-    }
-    header div .iflogo {
+    header .iflogo {
     display: none;
     }
-    main .box h1{
-    font-size:18px;
-    }
-    main .box p {
-    font-size:10px;
-    }
-    main .box button {
-    font-size:10px;
-    }
-    main .mod h1 {
-    font-size:18px;
-    }
-    main .mod ul p {
-        font-size: 10px;
-    }
-    main .sobre h1 {
-    font-size:18px;
-}
-    main .sobre p {
-    font-size: 10px;
-}
-    footer p {
-    font-size:7px;
-    }
-}
-@media (max-width: 498px) {
-    header nav a:link {
-    font-size: 10px;
-    }
-    main .box h1{
-    font-size:13px;
-    }
-    main .box p {
-    font-size:7px;
-    }
-    main .box button {
-    font-size:8px;
-    }
-    main .mod h1 {
-    font-size:12px;
-    }
-    main .mod ul p {
-        font-size: 7px;
-    }
-    main .sobre h1 {
-    font-size:13px;
-}
-    main .sobre p {
-    font-size: 7px;
-}
-    footer p {
-    font-size:5px;
-    }
-    footer {
-        padding:10px;
-    }
-}
-@media (max-width: 370px) {
     header {
-        padding:0;
+        flex-direction: column;
     }
-    header nav {
-    flex-direction: column;
+    .bov p span {
+        display: none;
     }
-    header nav a:link {
-    font-size: 10px;
-    text-align: center;
+    main .mod ul li p {
+        text-align: center;
     }
-    main .box {
-    padding-top:5px;
-    padding-bottom:5px;
-    align-items: stretch;
+    main .mod ul li p span {
+        display: none;
     }
-    main .box h1{
-    font-size:9px;
+    .sobre p span {
+        display: none;
     }
-    main .box p {
-    font-size:5px;
-    padding:0;
-    }
-    main .box button {
-    font-size:5px;
+    main .bov {
+        margin: 0.4846rem;
     }
     main .mod {
-    align-items: stretch;
-    }
-    main .mod h1 {
-    font-size:9px;
-    }
-    main .mod ul p {
-        font-size: 5px;
-    }
-    main .mod ul {
-    list-style-type: none;
+        margin:0.4846rem;
     }
     main .sobre {
-        align-items: stretch;
+        margin:0.4846rem;
     }
-    main .sobre h1 {
-    font-size:9px;
+    main .bov button {
+        margin-top: 0.4846rem;
+        margin-bottom:0.4846rem;
+    }
 }
-    main .sobre p {
-    font-size: 5px;
+@media (max-width: 400px) {
+    html {
+        font-size: 13px;
+    }
 }
-    footer p {
-    font-size:5px;
+@media (max-width: 350px) {
+    html {
+        font-size: 12px;
+    }
+    header .logo {
+        display: none;
+    }
+    header .logo-mobile {
+        display: inline;
+    }
+}
+@media (max-width: 350px) {
+    html {
+        font-size: 11px;
+    }
+}
+@media (max-width: 300px) {
+    html {
+        font-size: 10px;
+    }
+}
+@media (max-width: 250px) {
+    html {
+        font-size: 9px;
     }
 }
