@@ -74,7 +74,7 @@ main .bov p {
 }
 main .bov button {
     background-color:#182732;
-    color:white;
+    color:rgb(255, 255, 255);
     font-size:0.8375rem;
     padding:2.9625rem;
     padding-top:0.625rem;
@@ -84,6 +84,8 @@ main .bov button {
     text-align: center;
     margin-top: 2rem;
     text-transform: uppercase;
+    cursor:pointer;
+    transition: 1s;
 }
 main .mod {
     margin: 1.875rem;
@@ -168,7 +170,7 @@ footer {
         font-size: 15px;
     }
     header .iflogo {
-    display: none;
+        display: none;
     }
     header {
         flex-direction: column;
