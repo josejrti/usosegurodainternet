@@ -4,8 +4,9 @@
     box-sizing: border-box;
 }
 body {
-    background-color: rgb(10, 10, 10);
+    background-color: #0d1117;
     color:white;
+    font-family: "Jost", sans-serif;
 }
 header {
     display: flex;
@@ -15,7 +16,6 @@ header {
     align-items: center;
     width:100%;
     padding:10px;
-    background-color: black;
 }
 header nav {
     display:flex;
@@ -23,42 +23,272 @@ header nav {
     flex-wrap: wrap;
 }
 header nav a {
-    margin:10px;
+    margin:15px;
 }
 header nav a:link {
     text-decoration: none;
-    color: white;
-    font-size: 12px;
+    color: #ffffff;
+    font-size: 15px;
     text-transform: uppercase;
+    transition: 1s;
 }
-main .box {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    width: 100%;
-    padding:40px;
+header nav a:hover {
+    color:#01B5FE;
 }
-main .box .text {
-    width:50%;
-    font-size:20px;
-    padding:20px;
+header nav a:active {
+    color: #ffffff;
 }
-main .cont {
+header nav a:visited {
+    color: #ffffff;
+}
+main {
+    width:100%;
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
 }
-main .cont ul {
-    margin:10px;
+main .box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding-top:20px;
+    padding-bottom:20px;
 }
-main .cont ul p {
-    font-size: 20px;
-    padding:10px;
+main .box h1{
+    font-size:37px;
+    padding-bottom:10px;
+}
+main .box p {
+    font-size:21px;
+    padding:5px;
+}
+main .box button {
+    background-color:#182732;
+    color:white;
+    font-size:15px;
+    padding:25px;
+    padding-top:10px;
+    padding-bottom:10px;
+    border:none;
+    border-radius:10px;
+    margin-top:30px;
+}
+main .mod {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding:50px;
+    padding-top:30px;
+    padding-bottom:30px;
+}
+main .mod h1 {
+    font-size:37px;
+    padding-bottom:10px;
+}
+main .mod ul {
+    list-style-type: circle;
+}
+main .mod ul li {
+    padding:5px;
+}
+main .mod ul p {
+    font-size: 21px;
+}
+ul p span {
+    color:#01B5FE;
+}
+main .sobre {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding-bottom:20px;
+    padding-top:20px;
+}
+main .sobre h1 {
+    font-size:37px;
+    padding-bottom:10px;
+}
+main .sobre p {
+    font-size: 21px;
+    padding:5px;
 }
 footer p {
     text-align: center;
+    font-size:16px;
 }
 footer {
-    padding:20px;
+    padding:30px;
+}
+@media (max-width: 1022px) {
+    main .box h1{
+    font-size:30px;
+    }
+    main .box p {
+    font-size:17px;
+    }
+    main .mod h1 {
+    font-size:30px;
+    }
+    main .mod ul p {
+        font-size: 17px;
+    }
+    main .sobre h1 {
+    font-size:30px;
+}
+    main .sobre p {
+    font-size: 17px;
+}
+    footer p {
+    font-size:13px;
+    }
+}
+@media (max-width: 828px) {
+    main .box h1{
+    font-size:23px;
+    }
+    main .box p {
+    font-size:13px;
+    }
+    main .mod h1 {
+    font-size:23px;
+    }
+    main .mod ul p {
+        font-size: 13px;
+    }
+    main .sobre h1 {
+    font-size:23px;
+}
+    main .sobre p {
+    font-size: 13px;
+}
+    footer p {
+    font-size:9px;
+    }
+}
+@media (max-width: 648px) {
+    header {
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width:100%;
+    }
+    header nav a:link {
+    font-size: 10px;
+    }
+    header div .iflogo {
+    display: none;
+    }
+    main .box h1{
+    font-size:18px;
+    }
+    main .box p {
+    font-size:10px;
+    }
+    main .box button {
+    font-size:10px;
+    }
+    main .mod h1 {
+    font-size:18px;
+    }
+    main .mod ul p {
+        font-size: 10px;
+    }
+    main .sobre h1 {
+    font-size:18px;
+}
+    main .sobre p {
+    font-size: 10px;
+}
+    footer p {
+    font-size:7px;
+    }
+}
+@media (max-width: 498px) {
+    header nav a:link {
+    font-size: 10px;
+    }
+    main .box h1{
+    font-size:13px;
+    }
+    main .box p {
+    font-size:7px;
+    }
+    main .box button {
+    font-size:8px;
+    }
+    main .mod h1 {
+    font-size:12px;
+    }
+    main .mod ul p {
+        font-size: 7px;
+    }
+    main .sobre h1 {
+    font-size:13px;
+}
+    main .sobre p {
+    font-size: 7px;
+}
+    footer p {
+    font-size:5px;
+    }
+    footer {
+        padding:10px;
+    }
+}
+@media (max-width: 370px) {
+    header {
+        padding:0;
+    }
+    header nav {
+    flex-direction: column;
+    }
+    header nav a:link {
+    font-size: 10px;
+    text-align: center;
+    }
+    main .box {
+    padding-top:5px;
+    padding-bottom:5px;
+    align-items: stretch;
+    }
+    main .box h1{
+    font-size:9px;
+    }
+    main .box p {
+    font-size:5px;
+    padding:0;
+    }
+    main .box button {
+    font-size:5px;
+    }
+    main .mod {
+    align-items: stretch;
+    }
+    main .mod h1 {
+    font-size:9px;
+    }
+    main .mod ul p {
+        font-size: 5px;
+    }
+    main .mod ul {
+    list-style-type: none;
+    }
+    main .sobre {
+        align-items: stretch;
+    }
+    main .sobre h1 {
+    font-size:9px;
+}
+    main .sobre p {
+    font-size: 5px;
+}
+    footer p {
+    font-size:5px;
+    }
 }
